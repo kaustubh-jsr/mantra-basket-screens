@@ -24,7 +24,7 @@
     text-decoration: none;
 }
 
-.home-page-caraousel{
+.homepage-caraousel{
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
     margin: 0 1rem;
 }
 
-.home-page-category-display{
+.homepage-category-display{
     display: flex;
     flex-direction: column;
     justify-content: center;
