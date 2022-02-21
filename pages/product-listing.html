@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Copy the below line of code and paste it in the head tag of your HTML file -->
+    <link rel="stylesheet" href="https://mantra-ui.netlify.app/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/9fb30d1717.js" crossorigin="anonymous"></script>
+    
+    <title>Mantra UI</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Navbar common for all pages -->
+        <nav class="main-nav">
+            <div class="img-container nav-logo-container">
+                <img src="../logo_ecomm-no-padding.jpg" alt="" srcset="">
+            </div>
+            <input type="text" class="search-bar" placeholder="Search among 5000+ items in 10+ daily needs categories">
+            <ul class="nav-links primary-nav-side-links flex">
+                <li>
+                    <button class="btn btn-warning">Log in</button>
+                </li>
+                <li>
+                    <a href="" class="badge-container icon-for-badge icon-md btn-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge">3</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Category Page Header for Category Image and Category Heading -->
+        <div class="category-page-header">
+            <div class="category-page-header-text h2">
+                Groceries
+            </div>
+            <div class="category-page-img">
+                <img class="img-responsive" src="../assets/fruits-and-vegetable-cover.webp" alt="">
+            </div>
+        </div>
+
+        <!-- Container for content between header image and footer, i.e. filter bar and product listings -->
+        <div class="product-listing-container">
+        <!-- Sidenav here used for filters and sorting elements -->
+      
+            <aside class="sidenav sidenav-filter-section">
+                <section class="sidenav-section">
+                    <div class="sidenav-section__header filter-header">
+                        Filters
+                        <button class="btn btn-outline-secondary">Clear all</button>
+                    </div>
+                    <div class="filter-type">
+                        <h5>Category</h5>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="fruits" id="" checked>
+                            <label for="fruits">Fruits</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="vegetables" id="">
+                            <label for="vegetables">Vegetables</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="seasonal-fruits" id="">
+                            <label for="seasonal-fruits">Seasonal fruits</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="seasonal-vegetables" id="">
+                            <label for="seasonal-vegetables">Seasonal Vegetables</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="imported-fruits" id="">
+                            <label for="imported-fruits">Imported fruits</label>
+                        </div>
+                    
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="leafy-vegetables" id="">
+                            <label for="leafy-vegetables">Leafy Vegetables</label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="filter-type">
+                        <h5>Price</h5>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="lt20" id="" checked>
+                            <label for="lt20">Less than 20 (115)</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="21to50" id="">
+                            <label for="21to50">Rs. 21 to Rs 50 (113)</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="51to100" id="">
+                            <label for="51to100">Rs 51 to Rs 100(150)</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="mt100" id="">
+                            <label for="mt100">Above Rs 100 (250)</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-type">
+                        <h5>Discount</h5>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="lt20" id="" checked>
+                            <label for="lt20">15% to 30% (350)</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="21to50" id="">
+                            <label for="21to50">30% - 50% (271)</label>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="51to100" id="">
+                            <label for="51to100">More than 50% (153)</label>
+                        </div>
+                    </div>
+                </section>
+                <div class="sidenav-section__div"><hr class="sidenav-section__divider"></div>
+                <section class="sidenav-section">
+                    <div class="sidenav-section__header filter-header">
+                        Sort by
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Popularity</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Price: Low to High</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Price : High to Low</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Alphabetical</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Alphabetical</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Rupee Saving - High to Low</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">Rupee Saving - Low to High</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="lt20" id="" checked>
+                        <label for="lt20">% Off - High to Low</label>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Main product listing grid -->
+            <div class="category-product-list-container">
+                    <!-- Basic vertical card -->
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bf81a90e-adbb-485e-bfcd-63fb4619a6a7.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--badge">
+                            New
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Strawberries</h1>
+                                <p class="card--subheading">1 kg container</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹500</span> ₹400 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3ea38082-38f8-41f8-a6fc-0c4ed481c040.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--badge">
+                            Imported
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Iceberg Lettuce</h1>
+                                <p class="card--subheading">500 gm</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹100</span> ₹80 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                   <!-- Basic vertical card -->
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4f1e62a9-3d61-4f5f-8f71-f51d61cf8cec.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Red Seedless grapes</h1>
+                                <p class="card--subheading">1 kg container</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹500</span> ₹400 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3ea38082-38f8-41f8-a6fc-0c4ed481c040.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--badge">
+                            Imported
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Iceberg Lettuce</h1>
+                                <p class="card--subheading">500 gm</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹100</span> ₹80 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bf81a90e-adbb-485e-bfcd-63fb4619a6a7.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--badge">
+                            New
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Strawberries</h1>
+                                <p class="card--subheading">1 kg container</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹500</span> ₹400 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3ea38082-38f8-41f8-a6fc-0c4ed481c040.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--badge">
+                            Imported
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Iceberg Lettuce</h1>
+                                <p class="card--subheading">500 gm</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹100</span> ₹80 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                   <!-- Basic vertical card -->
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4f1e62a9-3d61-4f5f-8f71-f51d61cf8cec.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Red Seedless grapes</h1>
+                                <p class="card--subheading">1 kg container</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹500</span> ₹400 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card product-card-vertical product-card">
+                        <div class="card-overlay">
+                            <div class="overlay-text">Out of Stock</div>
+                        </div>
+                        <div class="card-basic--image">
+                            <img class="card-basic--img-tag" src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3ea38082-38f8-41f8-a6fc-0c4ed481c040.jpg" alt="sample card image">
+                        </div>
+                        <div class="card--details">
+                            <header class="card--header">
+                                <h1 class="card--heading">Iceberg Lettuce</h1>
+                                <p class="card--subheading">500 gm</p>
+                                <p class="card--heading"> <span class="strikethrough grey-text">₹100</span> ₹80 <span class="discount-text primary-text">(Save 20%)</span></p>
+                            </header>
+    
+                            <div class="card--links">
+                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+        
+
+          <footer>
+              <div class="footer-links">
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-github"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
+              <div class="footer-text">
+                © No Copyright, Feel free to replicate.
+              </div>
+          </footer>
+    </div>
+</body>
+</html>
