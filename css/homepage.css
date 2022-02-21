@@ -33,7 +33,7 @@
 
 .caraousel-arrow{
     background-color: var(--white-color);
-    box-shadow: var(--carousel-box-shadow-colors) 0px 0px 12px 0px;
+    box-shadow: var(--carousel-box-shadow-color) 0px 0px 12px 0px;
     color: var(--caraousel-arrow-color);
     margin: 0 1rem;
 }
