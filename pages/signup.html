@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Copy the below line of code and paste it in the head tag of your HTML file -->
+    <link rel="stylesheet" href="https://mantra-ui.netlify.app/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/9fb30d1717.js" crossorigin="anonymous"></script>
+    
+    <title>Mantra Basket</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Navbar common for all pages -->
+        <nav class="main-nav">
+            <a href="/" class="img-container nav-logo-container">
+                <img src="../logo_ecomm-no-padding.jpg" alt="mantra-logo">
+            </a>
+            <input type="text" class="search-bar" placeholder="Search among 5000+ items in 10+ daily needs categories">
+            <ul class="nav-links primary-nav-side-links flex">
+                <li>
+                    <a href="../pages/login.html" class="btn btn-warning">Log in</a>
+                </li>
+                <li>
+                    <a href="../pages/wishlist-page.html" class="badge-container icon-for-badge icon-md btn-cart">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge">5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/cart-management.html" class="badge-container icon-for-badge icon-md btn-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge">3</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Container for content between header image and footer, i.e. filter bar and product listings -->
+        <div class="login-page-container">
+            <form class="card signup-card">
+                <h2 class="text-center">Sign Up</h2>
+                <input type="text" class="form-field signup-input" placeholder="First Name" required>
+                <input type="text" class="form-field signup-input" placeholder="Last Name" required>
+                <input type="email" class="form-field signup-input" placeholder="Your Email" required>
+                <input type="password" class="form-field signup-input" placeholder="Password" required>
+                <input type="password" class="form-field signup-input" placeholder="Confirm Password" required>
+                <button type="submit" class="btn btn-primary btn-login">Sign Up</button>
+                <p class="text-center">Already signed up? <a href="../pages/login.html" class="btn btn-link">Login here</a></p>
+            </form>
+        </div>
+
+          <footer>
+              <div class="footer-links">
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-github"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
+              <div class="footer-text">
+                © No Copyright, Feel free to replicate.
+              </div>
+          </footer>
+    </div>
+</body>
+</html>
