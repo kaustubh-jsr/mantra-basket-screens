@@ -16,8 +16,23 @@ html{
     --carousel-box-shadow-color : rgb(0 0 0 / 16%);
     --caraousel-arrow-color:#333;
 }
+.primary-nav-side-links{
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.primary-nav-side-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
 @media screen and (max-width:767px){
     html{
         font-size: 50%;
+    }
+    .primary-nav-side-links{
+        gap: 1rem;
     }
 }
